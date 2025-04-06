@@ -1,5 +1,5 @@
 # MathAsScripting
-Math as a Scripting thing (the brain is your interpreter > (see -> #{math}; then interpret(it)))
+Math as a Scripting thing (the brain is your `interpreter > (see -> #{math}; then interpret(it))`)
 
 ## Introduction
 Okay...you're in a math class and you're a programmer, but, you think math as a scripting language... creating variables in your calculations.... <br/>
