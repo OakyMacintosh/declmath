@@ -16,14 +16,14 @@ But, **i developed a solution**...
 you can turn this: <br/>
 
 $$
-x = 12; \sqrt{12}
+x = 12; \sqrt{x}
 $$
 
 into this ...:
 
 ```declmath
 x = 12
-root(12)
+root(x)
 ```
 
 Run the same code on a computer and in your mind, with the MathAsScripting book!
