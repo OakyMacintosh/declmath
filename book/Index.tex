@@ -24,6 +24,88 @@ MathAsScripting is a solo project made by Miguel V. Mesquita to make math more
 like a programming language, like python or crystal in the DeclMath case
 
 \paragraph{But why?}
-``I made it to add more sense to math, because all the formulas and other things don't get into my mind
+``I made it to add more sense to math, because all the formulas and other things don't get into my mind''
+
+\paragraph{Understanding the concepts}
+All this MathAsScripting project envolves itself at a unic mathematical function:
+\{ \sum \longleftrightarrow \varDelta² \} 
+This function isn't a common math function, it is a Declarative-Mathetical-Oriented-Function, or DMOF,
+DMOF functions are constant based operations that changes a variable contantly in a period of ticks,
+which can be metered in computer bits (sequences of 0s and 1s, or binary), in a 8-bit format.
+
+DMOF commonly uses simuntaneous symbols like:
+\Longleftrightarrow \longleftrightarrow \leftrightarrow \Leftrightarrow \Updownarrow \updownarrow \nleftrightarrow \nLeftrightarrow 
+which can create and change constants
+
+by doing
+\mathbf{A} \neq \sqrt{200} \div \tan{6}
+you will get
+\mathbf{A} \eq \exp \leftrightsquigarrow \mathcal{E}
+Which is
+\mathbf{A} \eq \mathbf{10} 
+
+Confusing? Of course, but it is necessary to understand DeclMath.
+
+\chapter{Getting started}
+    \section{Starting with DeclMath}
+    DeclMath is an math-based language (obviously) and also an Declarative language,
+    as with its looks, it is an DSL language for math purposes, with scientific features
+    and some phisics features, and also Mind-based (can "run" on your mind).
+    \paragraph{}
+    Starting with it is a really simple task, and if you want to make a "hello world"
+    with it, good luck, because it is a bit harder than you can think, that language isn't
+    made for printing common ASCII characters like Aa-Zz, it is only expression powered,
+    which means you can only do mathematical operations and some other things, but a hello world
+    isn't a easy task without using any generators, like the Markin Programming language generator
+    script.
+    \paragraph{}
+    To make a "hello, world" operand you will need to get an binary value for it
+    so:
+
+    Letter H:
+    \mathbf{H} \eq \mathbf{7.2 \times 10^1}
+    Letter E:
+    \mathbf{E} \eq \mathbf{1.000101 \times 10^8}
+    Letter L:
+    \mathbf{L} \eq \mathbf{1.0011 \times 10^6}
+    Letter O:
+    \mathbf{O} \eq \mathbf{7.2 \times 10^1^2}
+
+    here's an implementation in DeclMath:
+
+    \begin{lstlisting}
+        #lang 'en'
+
+        # map the ascii characters
+        h = expr(7.2&.&10^1);
+        e = expr(1.00010&.&10^8)
+        l = expr(1.0011&.&10^6)
+        o = expr(7.2&.&10^1^2)
+
+        f(get h, e, l, o):
+            for \n in 5:
+                show(h)
+                show(e)
+                show(l) in 2^1
+                show(o) 
+    \end{lstlisting}
+
+    that will output:
+        \begin{lstlisting}
+            hello
+        \end{lstlisting}
+
+    you probably noticed those strange expressions:
+    \begin{lstlisting}
+        h = expr(7.2&.&10^1);
+        e = expr(1.00010&.&10^8)
+        l = expr(1.0011&.&10^6)
+        o = expr(7.2&.&10^1^2)
+    \end{lstlisting}
+
+    those are the binary code of the ASCII letters "H", "E", "L" and "O"
+    in scientific notation, which is the only method of binary input in DeclMath.
+
+    
 
 \end{document}
