@@ -70,5 +70,8 @@ The words in the japonese form of declmath aren't fluent translations, it can't 
 
 **Translated to japonese using Microsoft Translate**
 
+### The Language itself
+You can install the interpreter, get the book to learn it out, or just use the Jupyter Notebook (Distribution Notebooks)
+
 ## License
 Obviously i'm using the MIT License.
