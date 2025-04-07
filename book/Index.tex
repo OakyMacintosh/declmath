@@ -2,6 +2,7 @@
 % i wrote this whole book using the overleaf latex guide
 
 \documentclass{book}
+\usepackage{amssymb}
 % \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{listings}
@@ -10,9 +11,6 @@
 \author{Miguel Vicente Mesquita}
 \date{April 2024}
 \begin{document}
-\maketitle
-The MathAsScripting Book
-Made in \LaTeX{}
 
 \newpage
 
@@ -29,25 +27,33 @@ like a programming language, like python or crystal in the DeclMath case
 
 \paragraph{Understanding the concepts}
 All this MathAsScripting project envolves itself at a unic mathematical function:
+$$
 \{ \sum \longleftrightarrow \varDelta² \} 
+$$
 This function isn't a common math function, it is a Declarative-Mathetical-Oriented-Function, or DMOF,
 DMOF functions are constant based operations that changes a variable contantly in a period of ticks,
 which can be metered in computer bits (sequences of 0s and 1s, or binary), in a 8-bit format.
 
 DMOF commonly uses simuntaneous symbols like:
-\Longleftrightarrow \longleftrightarrow \leftrightarrow \Leftrightarrow \Updownarrow \updownarrow \nleftrightarrow \nLeftrightarrow 
+$$
+\Longleftrightarrow \longleftrightarrow \leftrightarrow \Leftrightarrow \Updownarrow \updownarrow \nleftrightarrow \nLeftrightarrow
+$$
 which can create and change constants
 
 by doing
+$$
 \mathbf{A} \neq \sqrt{200} \div \tan{6}
+$$
 you will get
-\mathbf{A} \eq \exp \leftrightsquigarrow \mathcal{E}
+$$
+\mathbf{A} = \exp \leftrightsquigarrow \mathcal{E}
+$$
 Which is
-\mathbf{A} \eq \mathbf{10} 
-
+$$
+\mathbf{A} = \mathbf{10} 
+$$
 Confusing? Of course, but it is necessary to understand DeclMath.
 
-\chapter{Getting started}
     \section{Starting with DeclMath}
     DeclMath is an math-based language (obviously) and also an Declarative language,
     as with its looks, it is an DSL language for math purposes, with scientific features
@@ -60,19 +66,25 @@ Confusing? Of course, but it is necessary to understand DeclMath.
     isn't a easy task without using any generators, like the Markin Programming language generator
     script.
     \paragraph{}
-    To make a "hello, world" operand you will need to get an binary value for it
+    To make a "hello, world" operand you will need to get a binary value for it
     so:
-
     Letter H:
-    \mathbf{H} \eq \mathbf{7.2 \times 10^1}
-    Letter E:
-    \mathbf{E} \eq \mathbf{1.000101 \times 10^8}
-    Letter L:
-    \mathbf{L} \eq \mathbf{1.0011 \times 10^6}
-    Letter O:
-    \mathbf{O} \eq \mathbf{7.2 \times 10^1^2}
-
-    here's an implementation in DeclMath:
+    $$
+    \mathbf{H} = \mathbf{7.2 \times 10^1}
+    $$
+Letter E: 
+    $$
+    \mathbf{E} = \mathbf{1.000101 \times 10^8}
+    $$
+Letter L:
+$$
+\mathbf{L} = \mathbf{1.0011 \times 10^6}
+$$
+Letter O: 
+$$
+\mathbf{O} = \mathbf{7.2 \times 10^1}
+$$
+Here is an implementation in DeclMath:
 
     \begin{lstlisting}
         #lang 'en'
@@ -107,7 +119,20 @@ Confusing? Of course, but it is necessary to understand DeclMath.
     those are the binary code of the ASCII letters "H", "E", "L" and "O"
     in scientific notation, which is the only method of binary input in DeclMath.
 
-    \chapter{Math functions}
+    \section{Math functions}
+
+    Now we're diving into Math functions, which you most know as $\DeclareMathOperator{f}{(x)}$ or $\DeclareMathOperator{g}{(x)}$.
+    \subsection{Using Math functions in DeclMath.}
+    DeclMath uses common math functions, but in a unformatted form, like just f(x) or g(x).
+    An function uses the following logic:
+
+    $$
+    \mathbf{x} = \sqrt{\DeclareMathOperator{f}{(T^3)}}
+    $$
+    $$
+    \mathbf{T} = [ \Delta + \mathbf{Fz} ]
+    $$
+    Which will get the values from $\mathbf{T^3}$ and read and change it's values constantly, like a constant, but it can be readed by a function using $\DeclareMathOperator{f}{(x)}$.
     
 
 \end{document}
