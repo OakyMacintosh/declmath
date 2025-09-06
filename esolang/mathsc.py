@@ -1,6 +1,6 @@
 from lark import Lark, Transformer, v_args
 
-with open("grammar.lark") as f:
+with open("grammars/grammar.lark") as f:
     grammar = f.read()
 
 parser = Lark(grammar, parser="lalr")
