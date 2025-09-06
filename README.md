@@ -49,17 +49,17 @@ await('c', 'a' and 'b')
 ### Language variations
 The `DeclMath` language can variate depending on the calculator's (a human or a machine) main language, in human cases you can declare the variation of your choice: <br/>
 ```declmath
-#lang * 'pt_br' # for Portugues do Brasil
-#lang * 'pt_pt' # for Portugues de Portugal
-#lang * 'en' # for American English
-#lang * 'en' -> __british__ # for British English
-#lang * 'jp' -> __piing__ # For ジャポネス・ピング
+$lang * 'pt_br' # for Portugues do Brasil
+$lang * 'pt_pt' # for Portugues de Portugal
+$lang * 'en' # for American English
+$lang * 'en' -> __british__ # for British English
+$lang * 'jp' -> __piing__ # For ジャポネス・ピング
 ```
 
 #### Japonese variation **only**
 The words in the japonese form of declmath aren't fluent translations, it can't variate.
 ```declmath
-#lang * 'jp' -> __piing__
+$lang * 'jp' -> __piing__
 
 # DeclMathの日本語例
 ルート(\32)
