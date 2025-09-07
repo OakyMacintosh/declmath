@@ -1,0 +1,111 @@
+// ================================
+// DeclMath UI - Quantum Inspired
+// ================================
+
+// Color Variables
+$dm-primary-blue: #0F62FE;        // Core blue
+$dm-primary-light: #4589FF;       // Hover blue
+$dm-secondary-cyan: #82CFFF;      // Cyan accent
+$dm-accent-purple: #A463F2;       // Vibrant purple
+$dm-accent-magenta: #FF64B0;      // Bright magenta/pink
+$dm-background-light: #FFFFFF;
+$dm-background-dark: #0A1F44;
+$dm-text-light: #FFFFFF;
+$dm-text-dark: #000000;
+$dm-border-light: #E0E0E0;
+$dm-border-dark: #1B2A4B;
+
+// ================================
+// Global Reset
+// ================================
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body Styling
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: $dm-background-light;
+  color: $dm-text-dark;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Dark Mode Support
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dm-background-dark;
+    color: $dm-text-light;
+  }
+}
+
+// Links and Buttons
+a,
+button {
+  color: $dm-primary-blue;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $dm-accent-magenta;
+  }
+}
+
+// Header Styling
+header {
+  background: linear-gradient(90deg, $dm-primary-blue, $dm-accent-purple);
+  color: $dm-text-light;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Footer Styling
+footer {
+  background-color: $dm-background-dark;
+  color: $dm-text-light;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Card Component
+.card {
+  background-color: $dm-background-light;
+  border: 1px solid $dm-border-light;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    border-color: $dm-accent-purple;
+  }
+}
+
+// Buttons
+.btn {
+  background-color: $dm-primary-blue;
+  color: $dm-text-light;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(90deg, $dm-accent-purple, $dm-accent-magenta);
+  }
+}
+
+// Utility Classes
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
